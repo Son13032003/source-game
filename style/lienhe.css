@@ -1,0 +1,144 @@
+.content__lienhe {
+    width: 80%;
+    margin: 10px 0 10px 20%;
+}
+ .content__lienhe h4,.content__lienhe h1 {
+    color:white;
+ }
+.content__lienhe>div:first-child {
+    padding-bottom: 50px;
+}
+
+iframe[name=page] {
+    width: 80%;
+}
+
+.content__lienhe>div>input,#sothichkhac {
+    width: 400px;
+    padding: 10px;
+    opacity: 0.9;
+}
+
+.content__lienhe select {
+    width: 425px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.gioitinh {
+    padding: 10px;
+    width: 405px;
+    background-color: white;
+    border-radius: 5px;
+}
+.dangky {
+    background: url("../images/bannerdk.jpg");
+    padding: 50px 0;
+}
+textarea {
+    padding: 20px;
+}
+
+.nutdangky {
+    height: 50px;
+    width: 180px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 2px solid cyan;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: linear-gradient(70deg,#03e6f5,#f471b5,#feeb3e,#03b3f8);
+    background-size: 200%;
+    animation: glow 10s linear infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    } 
+    100% {
+        background-position: 700%;
+    }
+}
+
+#thongbao {
+    position:fixed;
+    top:40px;
+    right:10px;
+}
+.success {
+    background-color: rgb(59, 170, 59);
+}
+.error {
+    background-color: rgb(255, 0, 0);
+
+	
+}
+.warning {
+    background-color: rgb(255, 165, 0);
+}
+.success,.warning,.error {
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 10px;
+    color: white;
+    border-left:4px solid green;
+    margin: 5px 0;
+    opacity: 0.7 ;
+}
+.one {
+    animation: slider 2s ease forwards;
+}
+.bx {
+    position: relative;
+    top: 3px;
+    padding-right: 10px;
+}
+.chay {
+    background: green;
+    position: relative;
+    height: 5px;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    animation: countdown 2s ease-in forwards;
+    animation-delay: 2s;
+} 
+@keyframes countdown {
+    0%{
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+@keyframes slider{
+    0% {
+		transform: translateX(100%);
+	}
+	40% {
+		transform: translateX(-30%);
+	}
+	80% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@keyframes slider__hidden{
+    0% {
+		transform: translateX(0px);
+	}
+	40% {
+		transform: translateX(0%);
+	}
+	80% {
+		transform: translateX(-30%);
+	}
+	100% {
+		transform: translateX(130%);
+	}
+}
